@@ -1,0 +1,33 @@
+
+<!doctype html>
+<html>
+<head>
+	<title>COMP2406 Hero Viewer Saranya</title>
+	<meta charset="utf8"/>
+	<link rel="stylesheet" href="style.css"/>
+	<script src="loadHeroes.js"></script>
+</head>
+<body>
+	<h1>COMP2406 A1 Hero Database!</h1>
+	<label for="heroSelect">Hero:</label>
+	<select name="Hero:" id="HeroSelect">	
+    </select><br/>
+   
+    <input type="button" onclick="fetchDataForm()" value="Fetch" id="fetchButton">
+    <input type="button" onclick="submitForm()" value="Update" id="updateButton"><br/>
+    <form  action="/getHero" onsubmit="return validateForm()" method="get">
+    <div id="styleEditor">
+			<label for="Name">Name:</label><br/>
+					<input type="text" size = "50" id="Name" /> <br/>
+		    <label for="AlterEgo">Alter Ego:</label><br/>
+					<input type="text" size = "50" id="AlterEgo" /> <br/>
+
+		    <label for="Jurisdiction">Jurisdiction:</label><br/>
+					<input type="nameJurisdiction" size = "100" id="Jurisdiction" /> <br/>
+		    <label for="SuperPowers">Superpowers:</label><br/>
+					<input type="nameSuperPowers" size = "100" id="SuperPowers"/> <br/>
+		</div>
+	</form>
+</body>
+
+</html>
